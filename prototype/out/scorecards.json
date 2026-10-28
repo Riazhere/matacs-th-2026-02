@@ -1,0 +1,156 @@
+{
+  "A": {
+    "proposal": "A",
+    "gate": "pass",
+    "notes": [],
+    "criteria": {
+      "experience": {
+        "raw": 93.33,
+        "points": 28.0,
+        "weight": 30
+      },
+      "price": {
+        "raw": 100.0,
+        "points": 25.0,
+        "weight": 25
+      },
+      "timeline": {
+        "raw": 100.0,
+        "points": 15.0,
+        "weight": 15
+      },
+      "warranty": {
+        "raw": 83.33,
+        "points": 12.5,
+        "weight": 15
+      },
+      "team": {
+        "raw": 100.0,
+        "points": 15.0,
+        "weight": 15
+      }
+    },
+    "total": 95.5,
+    "flags": [],
+    "status": "ranked"
+  },
+  "B": {
+    "proposal": "B",
+    "gate": "fail",
+    "notes": [
+      "Ontario electrical contractor licence: not met (licence_held_by_bidder)"
+    ],
+    "criteria": {},
+    "total": null,
+    "status": "ineligible"
+  },
+  "C": {
+    "proposal": "C",
+    "gate": "pass",
+    "notes": [],
+    "criteria": {
+      "experience": {
+        "raw": 60.0,
+        "points": 18.0,
+        "weight": 30
+      },
+      "price": {
+        "raw": 97.54,
+        "points": 24.39,
+        "weight": 25
+      },
+      "timeline": {
+        "raw": 85.71,
+        "points": 12.86,
+        "weight": 15
+      },
+      "warranty": {
+        "raw": 83.33,
+        "points": 12.5,
+        "weight": 15
+      },
+      "team": {
+        "raw": 50.0,
+        "points": 7.5,
+        "weight": 15
+      }
+    },
+    "total": 75.24,
+    "flags": [
+      "instructions aimed at the AI/reviewer found in the document"
+    ],
+    "status": "flagged"
+  },
+  "D": {
+    "proposal": "D",
+    "gate": "pass",
+    "notes": [],
+    "criteria": {
+      "experience": {
+        "raw": 73.33,
+        "points": 22.0,
+        "weight": 30
+      },
+      "price": {
+        "raw": 100.0,
+        "points": 25.0,
+        "weight": 25
+      },
+      "timeline": {
+        "raw": null,
+        "points": null,
+        "weight": 15
+      },
+      "warranty": {
+        "raw": 83.33,
+        "points": 12.5,
+        "weight": 15
+      },
+      "team": {
+        "raw": 50.0,
+        "points": 7.5,
+        "weight": 15
+      }
+    },
+    "total": null,
+    "flags": [
+      "missing information for: Timeline"
+    ],
+    "status": "flagged"
+  },
+  "E": {
+    "proposal": "E",
+    "gate": "pass",
+    "notes": [],
+    "criteria": {
+      "experience": {
+        "raw": 53.33,
+        "points": 16.0,
+        "weight": 30
+      },
+      "price": {
+        "raw": 98.14,
+        "points": 24.54,
+        "weight": 25
+      },
+      "timeline": {
+        "raw": 92.31,
+        "points": 13.85,
+        "weight": 15
+      },
+      "warranty": {
+        "raw": 90.0,
+        "points": 13.5,
+        "weight": 15
+      },
+      "team": {
+        "raw": 100.0,
+        "points": 15.0,
+        "weight": 15
+      }
+    },
+    "total": 82.88,
+    "flags": [],
+    "status": "ranked"
+  }
+}

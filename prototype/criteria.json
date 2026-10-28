@@ -1,0 +1,37 @@
+{
+  "category": "commercial_solar_installation",
+  "version": 1,
+  "context": { "budget_ceiling_cad": 260000, "max_weeks": 16 },
+  "fields": [
+    { "key": "licence_held_by_bidder", "type": "boolean", "description": "The bidder itself holds an Ontario electrical contractor licence and the proposal states it (a licence number or an explicit statement). A licence held by an unnamed or future subcontractor is false." },
+    { "key": "wsib_clearance", "type": "boolean", "description": "The proposal confirms current WSIB clearance." },
+    { "key": "liability_insurance_5m", "type": "boolean", "description": "The proposal confirms liability insurance of at least CAD 5,000,000." },
+    { "key": "qualifying_installs", "type": "integer", "description": "Number of commercial installations of 100 kW or more completed in the last 5 years. Count only what the proposal states." },
+    { "key": "total_price_cad", "type": "number", "description": "Total price in CAD." },
+    { "key": "completion_weeks", "type": "number", "description": "Weeks from award to completion. Null if no firm duration is given." },
+    { "key": "panel_warranty_years", "type": "number", "description": "Panel warranty length in years." },
+    { "key": "workmanship_warranty_years", "type": "number", "description": "Workmanship warranty length in years." },
+    { "key": "named_project_lead", "type": "boolean", "description": "A project lead or manager is described as a named or specific role-holder, not just 'will be assigned later'." },
+    { "key": "crew_described", "type": "boolean", "description": "Crew size or composition is stated." },
+    { "key": "safety_plan", "type": "boolean", "description": "A site safety plan is included." },
+    { "key": "monitoring_plan", "type": "boolean", "description": "Post-install performance monitoring is offered. Progress reports during construction do not count." }
+  ],
+  "mandatory": [
+    { "id": "licence", "label": "Ontario electrical contractor licence", "all_of": ["licence_held_by_bidder"] },
+    { "id": "wsib_insurance", "label": "WSIB clearance and $5M liability insurance", "all_of": ["wsib_clearance", "liability_insurance_5m"] }
+  ],
+  "weighted": [
+    { "id": "experience", "label": "Relevant experience", "weight": 30,
+      "scoring": { "method": "linear_cap", "field": "qualifying_installs", "cap": 15 } },
+    { "id": "price", "label": "Price", "weight": 25,
+      "scoring": { "method": "lowest_ratio", "field": "total_price_cad", "limit": 260000 } },
+    { "id": "timeline", "label": "Timeline", "weight": 15,
+      "scoring": { "method": "lowest_ratio", "field": "completion_weeks", "limit": 16 } },
+    { "id": "warranty", "label": "Warranty", "weight": 15,
+      "scoring": { "method": "capped_sum", "parts": [
+        { "field": "panel_warranty_years", "cap": 25, "share": 50 },
+        { "field": "workmanship_warranty_years", "cap": 15, "share": 50 } ] } },
+    { "id": "team", "label": "Team and approach", "weight": 15,
+      "scoring": { "method": "checklist_share", "fields": ["named_project_lead", "crew_described", "safety_plan", "monitoring_plan"] } }
+  ]
+}

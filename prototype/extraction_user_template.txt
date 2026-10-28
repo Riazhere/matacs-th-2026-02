@@ -1,0 +1,11 @@
+Extract the following fields from the proposal below.
+
+<criteria_fields>
+{{criteria_fields_json}}
+</criteria_fields>
+
+<proposal>
+{{proposal_text}}
+</proposal>
+
+Return only the JSON object described in the system instructions.

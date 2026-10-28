@@ -1,0 +1,37 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 95.5,
+    "reason": "Passed both mandatory checks; strongest on price, weakest on warranty."
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 82.88,
+    "reason": "Passed both mandatory checks; strongest on team, weakest on experience."
+  },
+  {
+    "proposal": "C",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Held for human review: instructions aimed at the AI/reviewer found in the document (provisional merit score 75.24 if the flag is cleared)"
+  },
+  {
+    "proposal": "D",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Held for human review: missing information for: Timeline"
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "ineligible",
+    "score": null,
+    "reason": "Failed mandatory check: Ontario electrical contractor licence: not met (licence_held_by_bidder)"
+  }
+]

@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+# Proposal text must never be published: keep local samples and raw extractions out of git
+prototype/samples/
+prototype/out/facts.json
