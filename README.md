@@ -3,7 +3,7 @@
 - **Name:** Riaz Ijaz
 - **Reference:** MATACS-TH-2026-02
 - **Role:** Associate Software Developer
-- **Time actually spent:** `<< FILL IN: your real hours, e.g. "about 2 hours, plus 30 minutes reviewing and editing" >>`
+- **Time actually spent:** about 2 hours
 
 ## In one paragraph
 
@@ -27,7 +27,7 @@ AI is used for one job only: reading each proposal and extracting facts with exa
 
 ## How I used AI tools
 
-`<< FILL IN honestly, 2-3 sentences. Say which tool(s) you used and for what. Example shape: "I used Claude to draft the structure of the design, the extraction prompt, the scoring script and the write-up. I reviewed all of it and ran the scoring script myself." >>`
+I used Claude to draft the structure of the design, the extraction prompt, the scoring script and the write-up. I reviewed all of it and ran the scoring script myself.
 
 **One place where I disagreed with or corrected the AI:** The AI's first scoring script normalised price and timeline against the cheapest/fastest bid in the pool of every proposal that passed the mandatory gate, including proposals that were flagged and would not be ranked. I disagreed with this: a proposal held out of the ranking should not change the scores of the ones that are ranked.
 
